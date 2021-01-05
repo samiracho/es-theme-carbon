@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  
+  <view name="system">
+    <image name="ControllerOverlay" extra="true">
+		<visible>true</visible>
+		<tile>false</tile>
+		<color>${baseColor}</color>
+		<zIndex>21</zIndex>
+		<linearSmooth>true</linearSmooth>
+		<path>./../images/controllers/default.svg</path>
+		<path>./../images/controllers/${system.theme}.svg</path>		
+    </image>
+	
+	<image name="ControllerOverlay" extra="true" region="eu"/>
+    <image name="ControllerOverlay" extra="true" region="us">
+		<path>./../images/controllers/us/${system.theme}.svg</path>
+    </image>
+    <image name="ControllerOverlay" extra="true" region="jp">
+		<path>./../images/controllers/jp/${system.theme}.svg</path>
+    </image>
+	
+  </view>
+  
+  <include>./controllersubset.xml</include>
+  
+  
+</theme>

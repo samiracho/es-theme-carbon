@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+      
+  <view name="system">
+
+	<!-- take white logo if avaible -->
+    <image name="logo">
+		<path>./../images/logos/${system.theme}-w.svg</path>
+    </image>
+
+	<image name="logo" region="us">
+		<path>./../images/logos/us/${system.theme}-w.svg</path>
+	</image>
+		
+	<image name="logo" region="jp">
+		<path>./../images/logos/jp/${system.theme}-w.svg</path>
+	</image>
+  </view>
+  
+</theme>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  
+  <view name="system">
+    <image name="ControllerOverlay" extra="true">
+		<visible>true</visible>
+		<path>./../images/consoles/default.png</path>
+		<path>./../images/consoles/${system.theme}.png</path>
+		<color>FFFFFFF0</color>
+		<linearSmooth>true</linearSmooth>
+    </image>
+	
+    <image name="ControllerOverlay" extra="true" region="eu"/>
+    <image name="ControllerOverlay" extra="true" region="us">
+      <path>./../images/consoles/us/${system.theme}.png</path>
+    </image>
+    <image name="ControllerOverlay" extra="true" region="jp">
+      <path>./../images/consoles/jp/${system.theme}.png</path>
+    </image>
+	
+  </view>
+  
+</theme>

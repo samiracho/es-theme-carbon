@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  
+  <view name="system">
+  
+	<image name="box1,box2,box3,box4,box5" extra="true">
+		<zIndex>30</zIndex>
+		<path>{random:thumbnail}</path>
+		<color>FFFFFFFF</color>
+		<origin>0.5 0.5</origin>
+		<maxSize>0.25 0.18</maxSize>
+		<roundCorners>0.05</roundCorners>
+		<scale>0</scale>
+		<scaleOrigin>0 0.5</scaleOrigin>
+		<opacity>0</opacity>
+		<visible>true</visible>
+	</image>
+	<!--
+    <image name="box1" extra="true">
+      <pos>0.92 0.2</pos>
+      <storyboard repeat="forever">
+        <animation property="opacity" from="0" to="1" begin="350" duration="1000" mode="linear"/>
+        <animation property="scale" from="0" to="1" begin="350" duration="1000" mode="bump"/>
+        <animation property="scaleOrigin" to="0" begin="9000" duration="0"/>
+        <animation property="scale" from="1" to="0" begin="9000" duration="1000" mode="easeOut"/>
+        <animation property="opacity" from="1" to="0" begin="9000" duration="1000" mode="easeOut"/>
+        <animation property="rotation" from="0" to="720" begin="9000" duration="1000" mode="easeOut"/>
+      </storyboard>
+    </image>
+	-->
+    <image name="box1" extra="true">
+      <pos>0.18 0.22</pos>
+      <storyboard repeat="forever">
+        <animation property="opacity" from="0" to="1" begin="700" duration="1000" mode="linear"/>
+        <animation property="scale" from="0" to="1" begin="700" duration="1000" mode="bump"/>
+        <animation property="scaleOrigin" to="0" begin="9000" duration="0"/>
+        <animation property="scale" from="1" to="0" begin="9000" duration="1000" mode="easeOut"/>
+        <animation property="opacity" from="1" to="0" begin="9000" duration="1000" mode="easeOut"/>
+        <animation property="rotation" from="0" to="720" begin="9000" duration="1000" mode="easeOut"/>
+      </storyboard>
+    </image>
+    <image name="box2" extra="true">
+      <pos>0.34 0.22</pos>
+      <storyboard repeat="forever">
+        <animation property="opacity" from="0" to="1" begin="1050" duration="1000" mode="linear"/>
+        <animation property="scale" from="0" to="1" begin="1050" duration="1000" mode="bump"/>
+        <animation property="scaleOrigin" to="0" begin="9000" duration="0"/>
+        <animation property="scale" from="1" to="0" begin="9000" duration="1000" mode="easeOut"/>
+        <animation property="opacity" from="1" to="0" begin="9000" duration="1000" mode="easeOut"/>
+        <animation property="rotation" from="0" to="720" begin="9000" duration="1000" mode="easeOut"/>
+      </storyboard>
+    </image>
+    <image name="box3" extra="true">
+      <pos>0.5 0.22</pos>
+      <storyboard repeat="forever">
+        <animation property="opacity" from="0" to="1" begin="1400" duration="1000" mode="linear"/>
+        <animation property="scale" from="0" to="1" begin="1400" duration="1000" mode="bump"/>
+        <animation property="scaleOrigin" to="0" begin="9000" duration="0"/>
+        <animation property="scale" from="1" to="0" begin="9000" duration="1000" mode="easeOut"/>
+        <animation property="opacity" from="1" to="0" begin="9000" duration="1000" mode="easeOut"/>
+        <animation property="rotation" from="0" to="720" begin="9000" duration="1000" mode="easeOut"/>
+      </storyboard>
+    </image>
+    <image name="box4" extra="true">
+      <pos>0.66 0.22</pos>
+      <storyboard repeat="forever">
+        <animation property="opacity" from="0" to="1" begin="1750" duration="1000" mode="linear"/>
+        <animation property="scale" from="0" to="1" begin="1750" duration="1000" mode="bump"/>
+        <animation property="scaleOrigin" to="0" begin="9000" duration="0"/>
+        <animation property="scale" from="1" to="0" begin="9000" duration="1000" mode="easeOut"/>
+        <animation property="opacity" from="1" to="0" begin="9000" duration="1000" mode="easeOut"/>
+        <animation property="rotation" from="0" to="720" begin="9000" duration="1000" mode="easeOut"/>
+      </storyboard>
+    </image>
+    <image name="box5" extra="true">
+      <pos>0.82 0.22</pos>
+      <storyboard repeat="forever">
+        <animation property="opacity" from="0" to="1" begin="2200" duration="1000" mode="linear"/>
+        <animation property="scale" from="0" to="1" begin="2200" duration="1000" mode="bump"/>
+        <animation property="scaleOrigin" to="0" begin="9000" duration="0"/>
+        <animation property="scale" from="1" to="0" begin="9000" duration="1000" mode="easeOut"/>
+        <animation property="opacity" from="1" to="0" begin="9000" duration="1000" mode="easeOut"/>
+        <animation property="rotation" from="0" to="720" begin="9000" duration="1000" mode="easeOut"/>
+      </storyboard>
+    </image>
+	<!--
+    <image name="box6" extra="true">
+      <pos>0.20 0.22</pos>
+      <storyboard repeat="forever">
+        <animation property="opacity" from="0" to="1" begin="2550" duration="1000" mode="linear"/>
+        <animation property="scale" from="0" to="1" begin="2550" duration="1000" mode="bump"/>
+        <animation property="scaleOrigin" to="0" begin="9000" duration="0"/>
+        <animation property="scale" from="1" to="0" begin="9000" duration="1000" mode="easeOut"/>
+        <animation property="opacity" from="1" to="0" begin="9000" duration="1000" mode="easeOut"/>
+        <animation property="rotation" from="0" to="720" begin="9000" duration="1000" mode="easeOut"/>
+      </storyboard>
+    </image>
+    <image name="box8" extra="true">
+      <pos>0.08 0.2</pos>
+      <storyboard repeat="forever">
+        <animation property="opacity" from="0" to="1" begin="2900" duration="1000" mode="linear"/>
+        <animation property="scale" from="0" to="1" begin="2900" duration="1000" mode="bump"/>
+        <animation property="scaleOrigin" to="0" begin="9000" duration="0"/>
+        <animation property="scale" from="1" to="0" begin="9000" duration="1000" mode="easeOut"/>
+        <animation property="opacity" from="1" to="0" begin="9000" duration="1000" mode="easeOut"/>
+        <animation property="rotation" from="0" to="720" begin="9000" duration="1000" mode="easeOut"/>
+      </storyboard>
+    </image> -->
+  </view>
+
+</theme>

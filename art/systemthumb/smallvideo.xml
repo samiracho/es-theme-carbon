@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  
+  <view name="system">
+    <video name="videobox" extra="true">
+		<visible>true</visible>	
+		<path>{random}</path>
+		<delay>0.20</delay>
+		<color>FFFFFFFF</color>
+		<effect>none</effect>
+		<roundCorners>0.05</roundCorners>
+		
+		<storyboard repeat="forever">
+			<!-- total 30000 : video duration -->
+			<animation property="opacity" from="0" to="1" begin="0" duration="1000" mode="linear"/>
+			<animation property="opacity" from="1" to="0" begin="29000" duration="1000" mode="easeOut"/> 
+		</storyboard>
+		
+    </video>
+  </view>
+  
+</theme>

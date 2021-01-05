@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  
+  <view name="screen">
+    <image name="crt" extra="true">
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <path>./../images/shaders/crt.png</path>
+      <color>FFFFFF90</color>
+      <tile>true</tile>
+    </image>
+
+	<image name="crtBorder" extra="true">
+		<tile>false</tile>
+		<pos>0 0</pos>
+		<size>1 1</size>
+		<path>./../images/shaders/crt_border.png</path>
+		<color>000000ff</color>
+		<cornerSize>32 32</cornerSize>
+		<zIndex>200</zIndex>
+	</image>
+
+
+<!--	
+	<ninepatch name="crt_border" extra="true" tinyScreen="false">
+      <pos>0 0</pos>
+      <size>1 1</size>
+      <path>./../images/shaders/crt_border.png</path>
+      <color>FFFFFF80</color>
+      <cornerSize>32 32</cornerSize>
+    </ninepatch>
+
+-->
+  </view>
+</theme>

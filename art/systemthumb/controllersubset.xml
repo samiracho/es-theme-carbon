@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  <subset name="controllerColor" displayName="${controllerColor}" >
+	<include name="theme" displayName="theme"/>
+	<include name="blue" displayName="${blue}">./../colors/controllerblue.xml</include>
+    <include name="red" displayName="${red}">./../colors/controllerred.xml</include>
+    <include name="green" displayName="${green}">./../colors/controllergreen.xml</include>
+    <include name="blanc">./../colors/controllerwhite.xml</include>
+	<include name="noir">./../colors/controllerblack.xml</include>
+  </subset>
+</theme>
