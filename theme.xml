@@ -666,80 +666,31 @@ originally based on: "simple" by nils bonenberger
 
 <!-- ------------------  GRID -------------------------------- --> 
   
-  
-  
-  
-  <view name="grid">
-    <image name="background">
-      <tile>false</tile>
-      <size>1 1</size>
-      <pos>0 0</pos>
-      <origin>0 0</origin>
-      <path>./art/bg.png</path>
-      <color>${backgroundColor}</color>
-      <zIndex>8</zIndex>      
-    </image>
-    <image name="consolebk" extra="true" ifSubset="systembackground:consoles">
-      <path>./art/background/${system.theme}.jpg</path>
-      <linearSmooth>true</linearSmooth>
-      <pos>0.5 0.5</pos>
-      <minSize>1 1</minSize>
-      <origin>0.5 0.5</origin>
-      <color>FFFFFF10</color>
-      <zIndex>9</zIndex>
-    </image>            
-    <image name="ControllerOverlay" extra="true" ifSubset="systembackground:mini-consoles">
-      <path>./art/consoles/default.png</path>
-      <path>./art/consoles/${system.theme}.png</path>
-      <linearSmooth>true</linearSmooth>
-      <pos>0.5 0.5</pos>
-      <maxSize>0.5 0.5</maxSize>
-      <origin>0.5 0.5</origin>
-      <color>FFFFFF09</color>
-      <zIndex>9</zIndex>
-    </image>
+   <view name="grid">
+	
+	<!-- Not used -->
     <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
-      <color>A0A0B000</color>
+      	<pos>1 1</pos>
+		<color>ffffff00</color>
     </text>
     <text name="md_developer, md_publisher, md_genre, md_players, md_playcount, md_description">
-      <color>ffffff00</color>
+      	<pos>1 1</pos>
+		<color>ffffff00</color>
     </text>
     <datetime name="md_releasedate, md_lastplayed">
-      <color>ffffff00</color>
-    </datetime>
+      	<pos>1 1</pos>
+		<color>ffffff00</color>
+    </datetime>	
+	
     <rating name="md_rating">
-      <pos>0.96 0.89</pos>
-      <size>0.03 0.02</size>
-      <color>FFFF00</color>
-      <horizontalAlignment>right</horizontalAlignment>
-      <unfilledColor>606060</unfilledColor>
-      <unfilledPath>:/star_filled.svg</unfilledPath>
-    </rating>
-    
-<!--
-    <image name="md_fanart">
-      <pos>0.5 0.08</pos>
-      <minSize>1 0.16</minSize>      
-      <origin>0.5 0.5</origin>
-      <color>808080</color>
-      <zIndex>1</zIndex>
-      <linearSmooth>true</linearSmooth>
-    </image>
--->
-		<text name="md_players">
-			<fontPath>./art/players.ttf</fontPath>
-      <text>1</text>
-      <size>0.025 0.035</size>
-
-      <pos>0.9675 0.84</pos>
-      <pos>0.01 0.88</pos>
-      <pos>0.01 0.837</pos>
-
-			<alignment>center</alignment>
-			<fontSize>0.03</fontSize>
-			<color>D0D0D0D0</color>
-			<zIndex>55</zIndex>
-		</text>
+		<origin>1 0.5</origin>
+		<pos>0.98 0.91</pos>
+		<size>0.03 0.02</size>
+		<color>FFFF00</color>
+		<horizontalAlignment>right</horizontalAlignment>
+		<unfilledColor>606060</unfilledColor>
+		<unfilledPath>:/star_filled.svg</unfilledPath>
+    </rating>	
 
     <image name="md_flag"> 
        <origin>0.5 0.5</origin>
@@ -766,52 +717,52 @@ originally based on: "simple" by nils bonenberger
       <color>80808030</color>
       <zIndex>150</zIndex>
     </image>
-
-
-    <image name="md_savestate">
-      <path>./art/icons/SaveState.png</path>
-      <pos>0.0225 0.720</pos>
-      <maxSize>0.02 0.03</maxSize>
-      <pos ifCheevos="false">0.0225 0.766</pos>
-      <origin>0.5 0.5</origin>
-      <color>D0D0D0D0</color>
-      <zIndex>150</zIndex>
     </image>
-    
-    <image name="md_nosavestate">
-      <path>./art/icons/SaveState.png</path>
-      <pos>0.0225 0.720</pos>
-      <pos ifCheevos="false">0.0225 0.766</pos>
-      <maxSize>0.02 0.03</maxSize>
-      <origin>0.5 0.5</origin>
-      <color>80808030</color>
-      <zIndex>150</zIndex>
+	
+	<text name="md_players">
+		<origin>0.5 0.5</origin>
+		<size>0.03 0.03</size>
+		<pos>0.023 0.85</pos>
+		<alignment>center</alignment>
+		<fontSize>0.03</fontSize>
+		<color>dddddd</color>
+		<fontPath>./art/fonts/players.ttf</fontPath>
+		<text>1</text>
+		<zIndex>100</zIndex>
+	</text>
+	
+	<image name="md_manual,md_nomanual">
+		<origin>0.5 0.5</origin>
+		<pos>0.023 0.8</pos>
+		<path>./art/images/icons/book.png</path>
+		<maxSize>0.02 0.02</maxSize>    
+		<color>dddddd</color>		
+		<zIndex>100</zIndex>
+	</image>
+	
+	<image name="md_nomanual">
+		<color>80808040</color>
+	</image>	
+	
+	<image name="md_kidgame">     
+		<origin>0.5 0.5</origin>
+		<path>./art/images/icons/kid.svg</path>
+		<pos>0.023 0.75</pos>
+		<maxSize>0.02 0.02</maxSize>      
+		<color>dddddd</color>
+		<zIndex>100</zIndex>
     </image>
-
-    <image name="md_manual">
-      <path>./art/book.png</path>
-      <pos>0.98 0.812</pos>
-      <pos>0.0225 0.856</pos>
-      <pos>0.0225 0.812</pos>
-      <maxSize>0.02 0.028</maxSize>
-      <origin>0.5 0.5</origin>
-      <color>D0D0D0D0</color>
-      <zIndex>150</zIndex>
-      <linearSmooth>true</linearSmooth>
-    </image>
-
-    <image name="md_nomanual">
-      <path>./art/book.png</path>
-      <pos>0.98 0.812</pos>
-      <pos>0.0225 0.856</pos>
-      <pos>0.0225 0.812</pos>
-      <maxSize>0.02 0.028</maxSize>
-      <origin>0.5 0.5</origin>
-      <color>80808025</color>
-      <zIndex>150</zIndex>
-      <linearSmooth>true</linearSmooth>
-    </image>
-    <imagegrid name="gamegrid">
+	
+    <image name="md_hidden">
+		<origin>0.5 0.5</origin>
+		<path>./art/images/icons/hidden.svg</path>
+		<pos>0.023 0.2</pos>
+		<maxSize>0.02 0.02</maxSize>      
+		<color>ff0000</color>
+		<zIndex>100</zIndex>
+    </image>	
+	
+	<imagegrid name="gamegrid">
       <margin>0.005 0.010</margin>
       <pos>0.025 0.16</pos>
       <size>0.950 0.84</size>
@@ -823,49 +774,63 @@ originally based on: "simple" by nils bonenberger
       <centerSelection>false</centerSelection>
       <scrollbarColor>96969620</scrollbarColor>
       <scrollbarCorner>0.49</scrollbarCorner>
-      <scrollbarSize>0.005</scrollbarSize>
+      <scrollbarSize>0.01</scrollbarSize>
+	  <zIndex>30</zIndex>
     </imagegrid>
-    <gridtile name="default">
+	
+	<gridtile name="default">
       <backgroundColor>FFFFFF00</backgroundColor>
       <backgroundCornerSize>9 9</backgroundCornerSize>
       <selectionMode>image</selectionMode>
       <padding>5 5</padding>
       <imageColor>FFFFFFB0</imageColor>
     </gridtile>
+	
     <gridtile name="selected">
       <backgroundCenterColor>${centerFadeColor}</backgroundCenterColor>
       <backgroundEdgeColor>${bottomBarColor}</backgroundEdgeColor>
       <imageColor>FFFFFFFF</imageColor>
     </gridtile>
+	
     <text name="gridtile">
       <color>FFFFFF80</color>
       <backgroundColor>00000000</backgroundColor>
-      <fontSize>0.022</fontSize>
+      <fontSize>0.025</fontSize>
       <alignment>center</alignment>
-      <size>1 0.24</size>
+      <size>1 0.28</size>
+	  <lineSpacing>1</lineSpacing>
     </text>
+	
     <text name="gridtile:selected">
-      <color>FFFFFF</color>
-      <glowColor>${glowColor}</glowColor>
-      <glowSize>2</glowSize>
+		<color>${systemInfoColor}</color>
+		<glowColor>${glowColor}</glowColor>
+		<glowSize>2</glowSize>
     </text>
+	
     <ninepatch name="gridtile.background:selected">
       <animateColor>EFEF60B0</animateColor>
       <animateColorTime>350</animateColorTime>
     </ninepatch>
-  </view>
-  <customView name="Boxes" inherits="grid" displayName="${basicGridName}">
+
+  </view>	  
+
+<!-- ------------------  GRID : BOXES -------------------------------- --> 	  
+
+ <customView name="Boxes" inherits="grid" displayName="${basicGridName}">
+ 
     <imagegrid name="gamegrid">
       <autoLayout>6 2</autoLayout>
       <autoLayout verticalScreen="true">2 2</autoLayout>
       <autoLayoutSelectedZoom>1.08</autoLayoutSelectedZoom>
     </imagegrid>
+	
     <text name="gridtile">
       <visible>false</visible>
     </text>
     <text name="gridtile:selected">
       <visible>false</visible>
     </text>
+	
     <image name="gridtile.favorite">
       <path>./art/favorite.png</path>
       <pos>0.91 0.09</pos>
@@ -874,26 +839,32 @@ originally based on: "simple" by nils bonenberger
       <horizontalAlignment>right</horizontalAlignment>
       <color>FFFF00B0</color>
     </image>
-  </customView>
-  <customView name="Carousel" inherits="grid" tinyScreen="false" displayName="${carouselViewName}">
-    <text name="md_name">
-      <color>ffffffff</color>
-      <pos>0.04 0.76</pos>
-      <size>0.92 0.10</size>
-      <alignment>center</alignment>
-      <glowColor>00000016</glowColor>
-      <glowSize>4</glowSize>
+	
+  </customView>	   
+
+<!-- ------------------  GRID : CAROUSEL -------------------------------- --> 	    
+ <customView name="Carousel" inherits="grid" tinyScreen="false" displayName="${carouselViewName}">
+ 
+    <text name="md_name">		
+		<color>${systemInfoColor}</color>
+		<glowColor>${glowColor}</glowColor>
+		<pos>0.04 0.76</pos>
+		<size>0.92 0.10</size>
+		<alignment>center</alignment>
+		<glowSize>3</glowSize>
     </text>
+	
     <text name="md_developer">
       <color>808080ff</color>
       <pos>0.04 0.80</pos>
       <size>0.92 0.10</size>
       <alignment>center</alignment>
-      <fontSize>0.020</fontSize>
+      <fontSize>0.025</fontSize>
       <glowColor>00000016</glowColor>
       <glowSize>3</glowSize>
     </text>
-    <imagegrid name="gamegrid">
+    
+	<imagegrid name="gamegrid">
       <pos>0 0.16</pos>
       <size>1 0.774</size>
       <padding>0.05 0.14 0.05 0.30</padding>
@@ -905,6 +876,7 @@ originally based on: "simple" by nils bonenberger
       <centerSelection>true</centerSelection>
       <scrollLoop>true</scrollLoop>
     </imagegrid>
+	
     <gridtile name="default">
       <padding>64 16</padding>
       <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
@@ -913,27 +885,32 @@ originally based on: "simple" by nils bonenberger
       <imageColor>FFFFFFAA</imageColor>
       <reflexion>0.24 0.0</reflexion>
     </gridtile>
+
     <gridtile name="selected">
       <backgroundCenterColor>FFFFFF00</backgroundCenterColor>
       <backgroundEdgeColor>FFFFFF00</backgroundEdgeColor>
       <padding>64 16</padding>
     </gridtile>
+
     <text name="gridtile">
       <visible>false</visible>
-      <color>80808080</color>
-      <fontSize>0.016</fontSize>
-      <size>1 0</size>
     </text>
+
     <text name="gridtile:selected">
       <color>FFFFFF00</color>
       <fontSize>0.035</fontSize>
       <size>1 0</size>
     </text>
+
     <ninepatch name="gridtile.background:selected">
       <animateColorTime>0</animateColorTime>
     </ninepatch>
+
   </customView>
+
+<!-- ------------------  GRID : TILES -------------------------------- --> 
   <customView name="Tiles" inherits="grid" displayName="${tilesViewName}">
+  
     <imagegrid name="gamegrid">
       <autoLayout>3 2</autoLayout>
       <autoLayout verticalScreen="true">2 3</autoLayout>
@@ -978,43 +955,17 @@ originally based on: "simple" by nils bonenberger
       <imageColor>A0A0A0FF</imageColor>
       <backgroundCornerSize>0.021</backgroundCornerSize>
     </gridtile>
+	
     <gridtile name="selected">
       <padding>5 5</padding>
       <imageColor>FFFFFFFF</imageColor>
       <backgroundCornerSize>0.021</backgroundCornerSize>
     </gridtile>
- <!--
-    <image name="gridtile.overlay">
-      <roundCorners>0.020</roundCorners>
-      <path>./art/overlay.png</path>
-      <color>FFFFFF70</color>
-    </image>
 
-     <image name="gridtile.overlay:selected">
-      <color>FFFFFF20</color>
-    </image>
-    -->
     <image name="gridtile.image">
       <roundCorners>0.020</roundCorners>
     </image>
-    <text name="gridtile">
-      <color>D0D0D0D0</color>
-      <backgroundColor>00000000</backgroundColor>
-      <fontPath>./art/Cabin-Regular.ttf</fontPath>
-      <fontSize>0.026</fontSize>
-      <alignment>center</alignment>
-      <singleLineScroll>false</singleLineScroll>      
-      <padding>0.08 0.02</padding>
-      <size>0 0.22</size>
-      <glowColor>00000060</glowColor>
-      <glowSize>1</glowSize>
-    </text>
-    <text name="gridtile:selected">
-      <singleLineScroll>false</singleLineScroll>
-      <color>FFFFFF</color>
-      <glowColor>${glowColor}</glowColor>
-      <glowSize>2</glowSize>
-    </text>
+	
     <image name="gridtile.favorite">      
       <path>./art/favorite.png</path>
       <pos>0.93 0.07</pos>
@@ -1023,12 +974,16 @@ originally based on: "simple" by nils bonenberger
       <horizontalAlignment>right</horizontalAlignment>
       <color>FFFF00A0</color>
     </image>
+	
     <image name="gridtile.favorite:selected">
       <color>FFFFFFE0</color>
     </image>
+	
   </customView>
   
-  <customView name="Icons" inherits="Tiles" displayName="${iconsViewName}">
+<!-- ------------------  GRID : TILES : ICONS -------------------------------- --> 	
+
+ <customView name="Icons" inherits="Tiles" displayName="${iconsViewName}">
    <imagegrid name="gamegrid">
       
       <autoLayout>0 2</autoLayout>
@@ -1037,12 +992,25 @@ originally based on: "simple" by nils bonenberger
       <autoLayout verticalScreen="true">2 0</autoLayout>
       <margin>0.008 0.010</margin>
     </imagegrid>
-    <text name="gridtile">
-      <fontSize>0.020</fontSize>
-      <size>1 0.18</size>
-      <padding>0 0.01 0 0.1</padding>
+	
+	<text name="gridtile">
+      <color>FFFFFF80</color>
+      <backgroundColor>00000000</backgroundColor>
+      <fontSize>0.025</fontSize>
+      <alignment>center</alignment>
+      <size>1 0.28</size>
+	  <lineSpacing>1</lineSpacing>
     </text>
+	
+	<text name="gridtile:selected">
+		<color>${systemInfoColor}</color>
+		<glowColor>${glowColor}</glowColor>
+		<glowSize>2</glowSize>
+    </text>
+
   </customView>  
+
+<!-- ------------------  SUBSETS  -------------------------------- --> 	
   
   <!-- Subset options for help -->
   <subset name="helpsystem" displayName="${helpSubsetName}">
@@ -1055,62 +1023,85 @@ originally based on: "simple" by nils bonenberger
   <!-- Subset options for screen -->
   <subset name="shader" displayName="${subset.shader}">
     <include name="None" displayName="${none}"/>
-    <include name="ScanLines">./art/scanlines.xml</include>
-    <include name="Crt">./art/crt.xml</include>
+    <include name="ScanLines">./art/shaders/scanlines.xml</include>
+    <include name="Crt">./art/shaders/crt.xml</include>
   </subset>
+  
   <!-- Specific layout for systems -->
   <include>./art/layouts/${system.theme}.xml</include>
   <!-- Layout when help is disabled -->
-  <include ifHelpPrompts="false">./art/layouts/nohelp.xml</include>
+  <include ifHelpPrompts="false">./art/systemview/nohelp.xml</include>
   <!-- Layout for small screens -->
   <subset tinyScreen="true" name="optimizesmallscreens" displayName="${optimizesmallscreensSubsetName}">
-    <include name="yes" displayName="${yes}">./art/layouts/gpicase.xml</include>
+    <include name="yes" displayName="${yes}">./art/systemview/gpicase.xml</include>
     <include name="no" displayName="${no}"/>
   </subset>
-  <!-- Subset options for grid views -->
+
+  <!-- Background of game list -->
+  <subset name="gamelistbackground" displayName="${gamelistbackground}" appliesTo="basic,detailed,grid,Tiles,Icons,Carousel,Boxes">
+    <include name="simple animated">./art/gamelistsbk/animatedbackground.xml</include>
+	<include name="simple">./art/gamelistsbk/simple.xml</include>
+    <include name="none" displayName="${none}"/>
+    <include name="consoles">./art/gamelistsbk/batomachines.xml</include>
+    <include name="carbon legacy">./art/gamelistsbk/carbon.xml</include>
+  </subset>
+  
+  <!-- add game info bar -->
+  	<subset name="gameBar" displayName="Add game info bar" appliesTo="detailed,grid,Tiles,Icons,Carousel,Boxes">
+    <include name="yes" displayName="${yes}">./art/gamelistview/infosbar.xml</include>
+    <include name="no" displayName="${no}"/>	
+	</subset>
+  
+    <!-- Subset options for grid views -->
   <subset name="videoboxes" displayName="${videoboxesSubsetName}" appliesTo="Boxes,grid">
     <include name="no" displayName="${no}"/>
-    <include name="yes" displayName="${yes}">./art/grid/videoboxes.xml</include>
+    <include name="yes" displayName="${yes}">./art/gamelistview/gridview/videoboxes.xml</include>
   </subset>
+  
+  
   <subset name="zoomboxes" displayName="${zoomboxesSubsetName}" appliesTo="Boxes,grid">
     <include name="no" displayName="${no}"/>
-    <include name="yes" displayName="${yes}">./art/grid/zoomboxes.xml</include>
+    <include name="yes" displayName="${yes}">./art/gamelistview/gridview/zoomboxes.xml</include>
   </subset>
   <subset name="scrolldirection" displayName="Orientation" appliesTo="Tiles,Icons,Boxes,grid">
     <include name="vertical"/>
-    <include name="horizontal">./art/grid/scrollhorz.xml</include>
+    <include name="horizontal">./art/gamelistview/gridview/scrollhorz.xml</include>
   </subset>
   <subset name="hideselection" displayName="${hideselectionSubsetName}" appliesTo="Boxes,grid">
     <include name="no" displayName="${no}"/>
-    <include name="yes" displayName="${yes}">./art/grid/hidesel.xml</include>
+    <include name="yes" displayName="${yes}">./art/gamelistview/gridview/hidesel.xml</include>
   </subset>
-  <subset name="previewbar" displayName="${previewBarSubsetName}" appliesTo="Tiles,Icons,Carousel,Boxes,grid">
+  <subset name="previewbar" displayName="${previewBarSubsetName}" appliesTo="Tiles,Icons,Carousel,Boxes,grid,detailed" >
     <include name="no" displayName="${no}"/>
-    <include name="yes" displayName="${yes}">./art/grid/previewbar.xml</include>
+    <include name="yes" displayName="${yes}">./art/gamelistview/previewbar.xml</include>
   </subset>
+  
+  <subset name="blinkborders" displayName="${blinkBorderSubsetName}" appliesTo="Tiles,Icons,Carousel,Boxes,grid">
+    <include name="yes" displayName="${yes}"/>
+    <include name="no" displayName="${no}">./art/gamelistview/gridview/blinkbordersoff.xml</include>
+  </subset>
+  
   <!-- Subset options for Tiles view -->
   <subset tinyScreen="false" name="glowsel" displayName="${glowSubsetName}" appliesTo="Tiles, Icons">
     <include name="yes" displayName="${yes}"/>
-    <include name="no" displayName="${no}">./art/tiles/noglow.xml</include>
+    <include name="no" displayName="${no}">./art/gamelistview/tiles/noglow.xml</include>
   </subset>
   <subset tinyScreen="false" name="tileborders" displayName="${roundBorderSubsetName}" appliesTo="Tiles, Icons">
     <include name="yes" displayName="${yes}"/>
-    <include name="no" displayName="${no}">./art/tiles/squareborders.xml</include>
+    <include name="no" displayName="${no}">./art/gamelistview/tiles/squareborders.xml</include>
   </subset>  
-  <subset name="blinkborders" displayName="${blinkBorderSubsetName}" appliesTo="Tiles,Icons,Carousel,Boxes,grid">
-    <include name="yes" displayName="${yes}"/>
-    <include name="no" displayName="${no}">./art/grid/blinkbordersoff.xml</include>
-  </subset>
   <subset name="videotiles" displayName="Videos" appliesTo="Icons,Tiles">
     <include name="yes" displayName="${yes}"/>
-    <include name="no" displayName="${no}">./art/tiles/novideo.xml</include>
+    <include name="no" displayName="${no}">./art/gamelistview/tiles/novideo.xml</include>
   </subset>
   <subset name="marqueetiles" displayName="Logos" appliesTo="Tiles">
-    <include name="yes" displayName="${yes}">./art/tiles/marquee.xml</include>
+    <include name="yes" displayName="${yes}">./art/gamelistview/tiles/marquee.xml</include>
     <include name="no" displayName="${no}"/>
   </subset>
+  
   <subset name="storyboards" displayName="${animationsSubsetName}">
     <include name="yes" displayName="${yes}">./storyboards.xml</include>
     <include name="no" displayName="${no}"/>
   </subset>
+  
 </theme>
