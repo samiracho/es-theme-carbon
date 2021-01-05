@@ -15,7 +15,7 @@ originally based on: "simple" by nils bonenberger
   <!-- Subset options for color  -->
   <subset name="colorset" displayName="${subset.colorset}">
     <include name="blue" displayName="${blue}">./art/colors/blue.xml</include>
-    <include name="red" displayName="${red}"/>
+    <include name="red" displayName="${red}">./art/colors/red.xml</include>
     <include name="green" displayName="${green}">./art/colors/green.xml</include>
     <include name="cyan">./art/colors/cyan.xml</include>
     <include name="yellow" displayName="${yellow}">./art/colors/yellow.xml</include>
@@ -23,16 +23,76 @@ originally based on: "simple" by nils bonenberger
     <include name="orange">./art/colors/orange.xml</include>   
     <include name="gray" displayName="${gray}">./art/colors/gray.xml</include>   
   </subset>
+  
   <view name="system,basic,detailed,grid,gamecarousel">
     <helpsystem name="help">
       <textColor>7d7d7d</textColor>
       <iconColor>7d7d7d</iconColor>
-      
       <pos verticalScreen="true">0.5 0.96</pos>
       <origin verticalScreen="true">0.5 0.5</origin>
       <fontSize  verticalScreen="true">0.025</fontSize>
     </helpsystem>
   </view>
+  
+ 	<view name="screen">
+		<text name="clock">
+			<color>777777FF</color>
+			<fontSize>0.035</fontSize>
+			<pos>0.90 0.94</pos>
+			<size>0.09 0.058</size>
+			<fontSize verticalScreen="true">0.028</fontSize>
+			<pos verticalScreen="true">0.90 0.012</pos>
+			<size verticalScreen="true">0.09 0.0275</size>
+			<color verticalScreen="true">FFFFFFA0</color>
+			<alignment>right</alignment>
+			<verticalAlignment>center</verticalAlignment>
+		</text>
+    
+		<controllerActivity name="controllerActivity">
+			<pos>0.01 0.012</pos>
+			<size>0.185 0.023</size>
+			<itemSpacing>0.003</itemSpacing>
+			<color>FFFFFF90</color>      
+			<!-- controllers -->
+			<imagePath>./art/gamepad.svg</imagePath>      
+			<activityColor>A0A0FFC0</activityColor>
+			<hotkeyColor>FFA0A0C0</hotkeyColor>
+			<!-- wifi 
+			<networkIcon>./art/icons/Network.png</networkIcon>
+			-->
+		</controllerActivity>
+
+		<batteryIndicator name="batteryIndicator">
+			<pos>0.955 0.012</pos>
+			<pos verticalScreen="true">0.9 0.013</pos>
+			<size>0.033 0.0275</size>
+			<horizontalAlignment>right</horizontalAlignment>
+			<incharge>./art/images/battery/incharge.svg</incharge>
+			<full>./art/images/battery/full.svg</full>
+			<at75>./art/images/battery/75.svg</at75>
+			<at50>./art/images/battery/50.svg</at50>
+			<at25>./art/images/battery/25.svg</at25>
+			<empty>./art/images/battery/empty.svg</empty>
+			<color>FFFFFFA0</color>
+
+			<!-- wifi -->
+			<!--   <networkIcon>./art/icons/Network.png</networkIcon>-->
+			<!--<networkIcon>none</networkIcon>-->
+		</batteryIndicator>
+
+		<batteryIndicator name="batteryIndicator" tinyScreen="true">
+			<pos>0.915 0.013</pos>
+			<size>0.07 0.07</size>
+		</batteryIndicator>
+	</view> 
+  
+ <!--     
+###########################################################################################################
+## SYSTEMS
+###########################################################################################################
+-->  
+  
+  
   <view name="system">
     <!-- Used by random box need to be declared there -->
     <image name="box" extra="true">
@@ -213,69 +273,7 @@ originally based on: "simple" by nils bonenberger
   
   <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
   <include subset="systemview" name="legacy">./art/systemview/legacyfix.xml</include>
-  <view name="screen">
-    <text name="clock">
-      <color>777777FF</color>
-      <fontSize>0.035</fontSize>
-      <pos>0.90 0.94</pos>
-      <size>0.09 0.058</size>
 
-      <fontSize verticalScreen="true">0.028</fontSize>
-      <pos verticalScreen="true">0.90 0.012</pos>
-      <size verticalScreen="true">0.09 0.0275</size>
-      <color verticalScreen="true">FFFFFFA0</color>
-
-      <alignment>right</alignment>
-      <verticalAlignment>center</verticalAlignment>
-    </text>
-    
-    <controllerActivity name="controllerActivity">
-      <pos>0.01 0.012</pos>
-      <size>0.185 0.023</size>
-      <itemSpacing>0.003</itemSpacing>
-      <color>FFFFFF90</color>
-      
-      <!-- controllers -->
-      <imagePath>./art/gamepad.svg</imagePath>      
-      <activityColor>A0A0FFC0</activityColor>
-      <hotkeyColor>FFA0A0C0</hotkeyColor>
-
-      <!-- wifi 
-      <networkIcon>./art/icons/Network.png</networkIcon>
-      -->
-      <!-- battery 
-      <incharge>./art/battery/incharge.svg</incharge>
-      <full>./art/battery/full.svg</full>
-      <at75>./art/battery/75.svg</at75>
-      <at50>./art/battery/50.svg</at50>
-      <at25>./art/battery/25.svg</at25>
-      <empty>./art/battery/empty.svg</empty>-->
-    </controllerActivity>
-
-    <batteryIndicator name="batteryIndicator">
-      <pos>0.955 0.012</pos>
-  <pos verticalScreen="true">0.9 0.013</pos>
-      <size>0.033 0.0275</size>
-<horizontalAlignment>right</horizontalAlignment>
-      <incharge>./art/battery/incharge.svg</incharge>
-      <full>./art/battery/full.svg</full>
-      <at75>./art/battery/75.svg</at75>
-      <at50>./art/battery/50.svg</at50>
-      <at25>./art/battery/25.svg</at25>
-      <empty>./art/battery/empty.svg</empty>
-
-<!-- wifi -->
-  <!--    <networkIcon>./art/icons/Network.png</networkIcon>-->
-<!--<networkIcon>none</networkIcon>-->
-
-      <color>FFFFFFA0</color>
-    </batteryIndicator>
-
-    <batteryIndicator name="batteryIndicator" tinyScreen="true">
-      <pos>0.915 0.013</pos>
-      <size>0.07 0.07</size>
-    </batteryIndicator>
-  </view>
   <view name="menu">
     <menuText name="menutitle">
       <fontPath>./art/Cabin-Bold.ttf</fontPath>
