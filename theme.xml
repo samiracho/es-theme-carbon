@@ -1030,7 +1030,7 @@ originally based on: "simple" by nils bonenberger
   <!-- Specific layout for systems -->
   <include>./art/layouts/${system.theme}.xml</include>
   <!-- Layout when help is disabled -->
-  <include ifHelpPrompts="false">./art/systemview/nohelp.xml</include>
+  <include ifHelpPrompts="false">./art/help/nohelp.xml</include>
   <!-- Layout for small screens -->
   <subset tinyScreen="true" name="optimizesmallscreens" displayName="${optimizesmallscreensSubsetName}">
     <include name="yes" displayName="${yes}">./art/systemview/gpicase.xml</include>

@@ -25,6 +25,9 @@
     <subset.shader>Shader</subset.shader>
     <glowSubsetName>Glow selection</glowSubsetName>
 	<dateFormat>%m/%d/%Y</dateFormat>
+	<helpbuttons>Button location</helpbuttons>
+    <xboxbuttons>Xbox buttons</xboxbuttons>
+    <psxbuttons>Playstation buttons</psxbuttons>
   </variables>
   <!-- French -->
   <variables lang="fr">
@@ -57,6 +60,7 @@
     <glowSubsetName>Sélection en Halo</glowSubsetName>
     <systemViewExInfos>Informations du système améliorées</systemViewExInfos>
 	<dateFormat>%d/%m/%Y</dateFormat>
+	<helpbuttons>Position des boutons</helpbuttons>
   </variables>
  <!-- Portuguese -->
   <variables lang="pt">
