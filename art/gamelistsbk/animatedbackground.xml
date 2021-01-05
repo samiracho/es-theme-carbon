@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  
+  <view name="basic, detailed, grid" >
+	
+	<image name="Bk" extra="true">
+      <tile>false</tile>
+      <size>1 1</size>
+      <pos>0 0</pos>
+      <origin>0 0</origin>
+      <path>./../bg.png</path>
+      <color>${backgroundColor}</color>
+      <zIndex>10</zIndex>
+      <scale>1.30</scale>
+    </image>
+		
+    <image name="animBk" extra="true">
+      <pos>0.5 0.5</pos>
+      <size>1.2 2.37</size>
+      <origin>0.5 0.5</origin>
+      <path>./../background.jpg</path>
+	  <color>A0A0A030</color>
+      <zIndex>11</zIndex>
+      <storyboard>
+        <animation property="rotation" from="0" to="360" duration="80000" mode="linear" repeat="forever"/>
+      </storyboard>
+    </image>
+	
+  </view>
+  
+
+</theme>

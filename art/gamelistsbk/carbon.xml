@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+  <formatVersion>7</formatVersion>
+  
+  <view name="basic, detailed, grid" >
+  
+    <image name="Bk" extra="true">
+      <tile>true</tile>
+      <size>1 1</size>
+      <pos>0 0</pos>
+      <path>./../carbon_fiber.png</path>
+      <color>FFFFFFFF</color>
+    </image>
+	
+  </view>
+  
+</theme>
