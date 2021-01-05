@@ -91,64 +91,39 @@ originally based on: "simple" by nils bonenberger
 ## SYSTEMS
 ###########################################################################################################
 -->  
-  
-  
-  <view name="system">
-    <!-- Used by random box need to be declared there -->
-    <image name="box" extra="true">
-      <pos>0.50 0.18</pos>
-      <origin>0.5 0.5</origin>
-      <maxSize>0.24 0.24</maxSize>
-      <zIndex>12</zIndex>
-      <visible>false</visible>
-    </image>
-    <video name="videobox" extra="true">
-      <pos>0.50 0.18</pos>
-      <origin>0.5 0.5</origin>
-      <maxSize>0.24 0.24</maxSize>
-      <visible>false</visible>
-      <zIndex>12</zIndex>
-    </video>
-    <image name="background" extra="static">
-      <tile>false</tile>
-      <size>1 1</size>
-      <pos>0 0</pos>
-      <origin>0 0</origin>
-      <path>./art/bg.png</path>
-      <color>${backgroundColor}</color>
-      <zIndex>10</zIndex>
-      <scale>1.10</scale>
-    </image>
 
+    <view name="system">
+	
     <text name="logoText">
-      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <fontPath>./art/fonts/Cabin-Bold.ttf</fontPath>
       <fontSize>0.06</fontSize>
       <color>${baseColor}</color>
       <forceUppercase>true</forceUppercase>    
     </text>
     
-    <image name="logo">
+    <image name="logo"> 		
       <!-- try png -->
-      <path>./art/logos/${system.theme}.png</path>
+      <path>./art/images/logos/${system.theme}.png</path>
       <!-- try svg -->
-      <path>./art/logos/${system.theme}.svg</path>
+      <path>./art/images/logos/${system.theme}.svg</path>
       <!-- check if lang resources exist -->
-      <path>./art/logos/${system.theme}-${lang}.png</path>
-      <path>./art/logos/${system.theme}-${lang}.svg</path>
+      <path>./art/images/logos/${system.theme}-${lang}.png</path>
+      <path>./art/images/logos/${system.theme}-${lang}.svg</path>
       <linearSmooth>true</linearSmooth>
+	  <zIndex>50</zIndex>
     </image>
     
-    <image name="logo" region="eu"></image>
-		<image name="logo" region="us">
-		  <path>./art/logos/us/${system.theme}.png</path>
-			<path>./art/logos/us/${system.theme}.svg</path>
-		</image>
+    <image name="logo" region="eu"/>
+	<image name="logo" region="us">
+		<path>./art/images/logos/us/${system.theme}.png</path>
+		<path>./art/images/logos/us/${system.theme}.svg</path>
+	</image>
 		
-		<image name="logo" region="jp">
-		  <path>./art/logos/jp/${system.theme}.png</path>
-			<path>./art/logos/jp/${system.theme}.svg</path>
-		</image>
-		    
+	<image name="logo" region="jp">
+		<path>./art/images/logos/jp/${system.theme}.png</path>
+		<path>./art/images/logos/jp/${system.theme}.svg</path>
+	</image>
+	
     <image name="BottomBar" extra="static">
       <tile>false</tile>
       <size>1 0.065</size>
@@ -158,77 +133,89 @@ originally based on: "simple" by nils bonenberger
       <color>${bottomBarColor}</color>
       <zIndex>50</zIndex>
     </image>
-    <image name="ControllerOverlay" extra="true">
+		
+	<text name="systemInfo">
+		<color>${systemInfoColor}</color>
+		<glowColor>${glowColor}</glowColor>
+		<glowSize>2</glowSize>
+		<reflexion>0.20 0.0</reflexion>
+		<alignment>center</alignment>
+		<pos>0 0.64</pos>
+		<size>1 0.28</size>
+		<fontSize>0.04</fontSize>   
+		<zIndex>25</zIndex>
+    </text>
+	
+	<image name="ControllerOverlay" extra="true">
       <tile>false</tile>
-      <pos>0.5 0.19</pos>
-      <origin>0.5 0.5</origin>
-      <size>0.3 0.3</size>
-      <path>./art/splash.svg</path>
-      <path>./art/controllers/${system.theme}.svg</path>
-      <color>${baseColor}</color>
-      <zIndex>19</zIndex>
-      <linearSmooth>true</linearSmooth>
+	  <origin>0.5 0.5</origin>
+      <pos>0.5 0.2</pos>
+	  <maxSize>0.4 0.3</maxSize> 
+	  <zIndex>25</zIndex>
+	  <visible>false</visible>
     </image>
+    
+	<video name="videobox" extra="true">
+	  <origin>0.5 0.5</origin>
+      <pos>0.5 0.2</pos>
+	  <maxSize>0.4 0.3</maxSize> 
+	  <zIndex>25</zIndex>
+      <visible>false</visible>
+    </video>
+		
   </view>
-  
+ 	
   <feature supported="manufacturer">
     <view name="system">
-      <text name="manufacturerName" extra="static">
-        <text>${system.sortedBy}</text>
-        <alignment>left</alignment>
-        <verticalAlignment>top</verticalAlignment>
-        <fontPath>./art/Cabin-Regular.ttf</fontPath>
-        <fontSize>0.060</fontSize>
-        <pos>0.029 0.037</pos>
-        <size>0.942 0.28</size>
-        <color>C0C0C0</color>      
-        <zIndex>100</zIndex>
-        <color>D0D0D0FF</color>
-        <glowColor>00000040</glowColor>
-        <glowSize>2</glowSize>
-
-        <fontSize tinyScreen="true">0.065</fontSize>
-        <glowSize tinyScreen="true">1</glowSize>
-      </text>
-      <text name="fullName" extra="true">
-        <text>${system.fullName}</text>
-        <alignment>left</alignment>
-        <verticalAlignment>top</verticalAlignment>
-        <fontPath>./art/Cabin-Regular.ttf</fontPath>
-        <fontSize>0.024</fontSize>
-        <pos>0.03 0.12</pos>
-        <pos verticalScreen="true">0.03 0.10</pos>         
-        <size>0.94 0.28</size>
-        <zIndex>100</zIndex>
-        <color>D0D0D0FF</color>
-        <glowColor>000000A0</glowColor>
-        <glowSize>1</glowSize>
-        
-        <pos tinyScreen="true">0.03 0.13</pos>
-        <glowColor tinyScreen="true">00000040</glowColor>
-        <fontSize tinyScreen="true">0.035</fontSize>
-      </text>
-      <text name="releaseYyear" extra="true">
-        <text>${system.releaseYearOrNull}</text>
-        <alignment>left</alignment>
-        <verticalAlignment>top</verticalAlignment>
-        <fontPath>./art/Cabin-Regular.ttf</fontPath>
-        <fontSize>0.024</fontSize>
-        <pos>0.03 0.157</pos>
-        <pos verticalScreen="true">0.03 0.127</pos>         
-        <size>0.94 0.28</size>        
-        <zIndex>100</zIndex>
-        <color>D0D0D0FF</color>
-        <glowColor>000000A0</glowColor>
-        <glowSize>1</glowSize>
-                
-        <pos tinyScreen="true">0.03 0.19</pos>
-        <glowColor tinyScreen="true">00000040</glowColor>
-        <fontSize tinyScreen="true">0.035</fontSize>
-      </text> 
+	
+		<text name="manufacturerName,fullName,releaseYear" extra="true">
+			<origin>0 0</origin>
+			<color>D0D0D0FF</color>
+			<glowColor>00000040</glowColor>	
+			<fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
+			<alignment>left</alignment>
+			<verticalAlignment>top</verticalAlignment> 
+			<zIndex>100</zIndex>	
+		</text>
+		
+		<text name="manufacturerName" extra="true">
+			<text>${system.sortedBy}</text>
+			<fontSize>0.060</fontSize>
+			<glowSize>2</glowSize>
+			<fontSize tinyScreen="true">0.065</fontSize>
+			<glowSize tinyScreen="true">1</glowSize>
+			<pos>0.03 0.037</pos>
+			<size>0.5 0.3</size>
+		</text>
+	  
+		<text name="fullName" extra="true">
+			<text>${system.fullName}</text>
+			<fontSize>0.03</fontSize>      
+			<glowSize>1</glowSize>     
+			<glowColor tinyScreen="true">00000040</glowColor>
+			<fontSize tinyScreen="true">0.035</fontSize>
+			<pos>0.03 0.12</pos>       
+			<size>0.5 0.3</size>
+			<pos verticalScreen="true">0.03 0.10</pos>  
+			<pos tinyScreen="true">0.03 0.13</pos>
+		</text>
+	  
+		<text name="releaseYear" extra="true">
+			<text>${system.releaseYearOrNull}</text>
+			<fontSize>0.03</fontSize>
+			<glowSize>1</glowSize>               
+			<glowColor tinyScreen="true">00000040</glowColor>
+			<fontSize tinyScreen="true">0.035</fontSize>
+			<pos>0.03 0.157</pos>
+			<size>0.5 0.3</size>
+			<pos verticalScreen="true">0.032 0.127</pos>         
+			<pos tinyScreen="true">0.032 0.19</pos>
+		</text> 
     </view>
-  </feature>
+  </feature>  
 
+
+<!-- ------------------  SYSTEM SUBSETS -------------------------------- --> 	  
 
   <!-- Subset option for System extended informations -->
   <subset name="subsetSystemInfoEx" displayName="${systemViewExInfos}" tinyScreen="false">
@@ -236,43 +223,47 @@ originally based on: "simple" by nils bonenberger
     <include name="no" displayName="${no}"/>
   </subset>
   
-  <!-- Subset options for screen -->
+     <!-- Subset options for screen -->
   <subset name="systemview" displayName="${systemViewName}">
     <include name="darkened">./art/systemview/horizontaldark.xml</include>
     <include name="horizontal">./art/systemview/horizontal.xml</include>
-    <include name="legacy" tinyScreen="false">./art/systemview/legacy.xml</include>
-    <include name="transparent" tinyScreen="false">./art/systemview/transparent.xml</include>
+    <include name="legacy">./art/systemview/legacy.xml</include>
+    <include name="transparent">./art/systemview/transparent.xml</include>
     <include name="simple">./art/systemview/verticalone.xml</include>
     <include name="vertical">./art/systemview/vertical.xml</include>
     <include name="wheel">./art/systemview/wheel.xml</include>
   </subset>
-
-
+  
   <!-- Subset option for System view background -->
   <subset name="systembackground" displayName="${systemBackgroundName}">
-    <include tinyScreen="false" name="mini-consoles">./art/systemsbk/consoles.xml</include>
-    <!-- change default for small screens -->
     <include name="consoles">./art/systemsbk/batomachines.xml</include>
-    <include tinyScreen="true" name="mini-consoles">./art/systemsbk/consoles.xml</include>
-    <include name="carbon controllers">./art/systemsbk/animatedbackgroundsubset.xml</include>
     <include name="carbon legacy">./art/systemsbk/carbon.xml</include>
     <include name="simple">./art/systemsbk/simple.xml</include>
+	<include name="simple animated">./art/systemsbk/animatedbackground.xml</include>
     <include name="random video">./art/systemsbk/video.xml</include>
     <include name="random fanart">./art/systemsbk/fanart.xml</include>
     <include name="random image">./art/systemsbk/image.xml</include>
     <include name="random box">./art/systemsbk/box.xml</include>
-    <include name="mini random image">./art/systemsbk/smallscreen.xml</include>
-    <include name="mini random box">./art/systemsbk/smallbox.xml</include>
-    <include name="mini random video">./art/systemsbk/smallvideo.xml</include>
-  </subset>
+  </subset>   
 
-  <!-- Fix for controller image size -->
-  <include subset="systemview" name="simple">./art/systemview/controllersizefix.xml</include>
-  <include subset="systemview" name="vertical">./art/systemview/controllersizefix.xml</include>
-  <include subset="systemview" name="wheel">./art/systemview/controllersizefix.xml</include>
+  <!-- Subset option for System view thumbnail -->
+  <subset name="systemthumbnail" displayName="${systemThumbnailName}">
+	<include nane="none" displayName="${none}" />
+    <include name="consoles">./art/systemthumb/consoles.xml</include>
+    <include name="carbon controllers">./art/systemthumb/controllers.xml</include>
+    <include name="random image">./art/systemthumb/smallscreen.xml</include>
+    <include name="random box">./art/systemthumb/smallbox.xml</include>
+    <include name="random video">./art/systemthumb/smallvideo.xml</include>
+	<include name="multiple random box" ifSubset="systemview:darkened|horizontal|legacy|transparent">./art/systemthumb/animatedcovers.xml</include>
+  </subset> 
+
+  <!--     
+###########################################################################################################
+## MENU
+###########################################################################################################
+-->  
   
-  <!-- Fix for Legacy option in systemview subset : systemInfo colors have to be restored after applying systembackground subset -->
-  <include subset="systemview" name="legacy">./art/systemview/legacyfix.xml</include>
+
 
   <view name="menu">
     <menuText name="menutitle">

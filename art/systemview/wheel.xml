@@ -1,36 +1,38 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
   <formatVersion>7</formatVersion>
-  <feature supported="manufacturer">
-    <view name="system">
-      <text name="manufacturerName" extra="static">
-        <pos>0.029 0.067</pos>
-        <alignment>right</alignment>
-      </text>
-      <text name="fullName" extra="true">
-        <pos>0.03 0.15</pos>
-        <alignment>right</alignment>
-      </text>
-      <text name="releaseYyear" extra="true">
-       <pos>0.03 0.187</pos>
-        <alignment>right</alignment>
-      </text>
-    </view>
-  </feature>
+
+	<feature supported="manufacturer">
+		<view name="system">
+			<text name="manufacturerName" extra="static">
+				<origin>1 0</origin> 
+				<alignment>right</alignment>
+				<pos>0.98 0.037</pos>
+			</text>
+	  
+			<text name="fullName" extra="true">
+				<origin>1 0</origin> 
+				<alignment>right</alignment>
+				<pos>0.98 0.12</pos>       
+				<pos verticalScreen="true">0.98 0.10</pos>  
+				<pos tinyScreen="true">0.98 0.13</pos>
+			</text>
+	  
+			<text name="releaseYear" extra="true">
+				<alignment>right</alignment>
+				<pos>0.98 0.157</pos>
+				<pos verticalScreen="true">0.98 0.127</pos>         
+				<pos tinyScreen="true">0.98 0.19</pos>
+			</text> 
+		</view>
+	</feature>  
+  
+  
+  <include>./whitelogos.xml</include>
+  
   <view name="system">
-    <!-- When random box -->
-    <image name="box" extra="true">
-      <pos>0.675 0.40</pos>
-      <maxSize>0.40 0.55</maxSize>
-    </image>
-    <video name="videobox" extra="true">
-      <pos>0.675 0.40</pos>
-      <maxSize>0.40 0.55</maxSize>
-    </video>
-    <image name="logo">
-      <!-- if system2 exists, take this version -->
-      <path>./../../${system.theme}/art/system2.svg</path>
-    </image>
+
+	
     <carousel name="systemcarousel">
       <type>vertical_wheel</type>
       <pos>0 -0.1</pos>
@@ -59,39 +61,36 @@
       <path>./../darkwheel.png</path>      
       <zIndex>12</zIndex>
     </image>
-
-    <text name="systemInfo">
-      <pos>0.175 0.67</pos>
-      <size>1 0.25</size>
- <pos>0.05 0.67</pos>
-      <backgroundColor>0000FF00</backgroundColor>
-      <color>${systemInfoColor}</color>
-      <glowColor>${glowColor}</glowColor>
-      <glowSize>2</glowSize>
-      <reflexion>0.20 0.0</reflexion>
+		
+	<text name="systemInfo">
+		<origin>0.5 0</origin>
+		<alignment>center</alignment>
+		<pos>0.7 0.6</pos>
+		<size>0.58 0.3</size>
+		<fontSize>0.028</fontSize>   
     </text>
-    <image name="CenterFade" extra="true"  tinyScreen="false">
-      <tile>false</tile>
-      <size>0.40 1</size>
-      <pos>0.2 1</pos>
-      <origin>1 1</origin>
-      <path>./../centerfade_v.png</path>
-      <color>${centerFadeColor}</color>
-      <zIndex>11</zIndex>
-    </image>
-    <image name="ControllerOverlay" extra="true">
-      <tile>false</tile>
-      <pos>0.675 0.40</pos>
-      <size>0.4 0</size>
-    </image>
+	
+	<text name="systemInfoEx" extra="true">
+		<origin>0.5 0</origin>
+		<alignment>center</alignment>
+		<pos>0.7 0.6</pos>
+		<size>0.58 0.3</size>
+		<fontSize>0.028</fontSize>   
+	</text>
 
-
-  </view>
-  <feature supported="manufacturer">
-    <view name="system">
-      <text name="systemInfoEx" extra="true">
-        <alignment>right</alignment>
-      </text>
-    </view>
-  </feature>  
+	<image name="ControllerOverlay" extra="true">
+	  <origin>0.5 0.5</origin>
+      <pos>0.7 0.4</pos>
+      <pos verticalScreen="true">0.75 0.5</pos>
+	  <maxSize>0.46 0.4</maxSize> 
+    </image>
+    
+	<video name="videobox" extra="true">
+	  <origin>0.5 0.5</origin>
+      <pos>0.7 0.4</pos>
+	  <maxSize>0.46 0.4</maxSize> 
+    </video>
+	
+	</view>
+	
 </theme>

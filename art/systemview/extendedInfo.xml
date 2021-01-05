@@ -2,15 +2,18 @@
 <theme>
   <formatVersion>7</formatVersion>
   <view name="system">
-      <text name="systemInfo">
+      
+	  <text name="systemInfo">
         <visible>false</visible>
       </text>
+	  
       <text name="systemInfoEx" extra="true">
         <!-- possible bindings are :
 {binding:total}, {binding:played}, {binding:favorites}, {binding:hidden}, {binding:gamesPlayed}
 {binding:mostPlayed}, {binding:lastPlayedDate}
 -->
-        <text>Games played : {binding:gamesPlayed}
+        <text>Number of games : {binding:total}
+Games played : {binding:gamesPlayed}
 Favorites : {binding:favorites}
 Most played : {binding:mostPlayed}
 Last played : {binding:lastPlayedDate}</text>
@@ -19,17 +22,19 @@ Favoris : {binding:favorites}
 Jeux joués : {binding:gamesPlayed}
 Le plus joué : {binding:mostPlayed}
 Dernière partie : {binding:lastPlayedDate}</text>
-        <alignment>left</alignment>
-        <alignment>center</alignment>
-        <verticalAlignment>center</verticalAlignment>
-        <fontPath>./art/Cabin-Regular.ttf</fontPath>
-        <fontSize>0.024</fontSize>
-        <pos>0.03 0.64</pos>
-        <size>0.94 0.28</size>
+		<color>${systemInfoColor}</color>
+		<glowColor>${glowColor}</glowColor>
+		<glowSize>2</glowSize> 
+        <fontPath>./../fonts/Cabin-Regular.ttf</fontPath> 
         <zIndex>100</zIndex>
-        <color>D0D0D0FF</color>
-        <glowColor>000000A0</glowColor>
-        <glowSize>1</glowSize>
+		<alignment>center</alignment>
+		<pos>0 0.64</pos>
+		<size>1 0.28</size>
+		<fontSize>0.03</fontSize>  
+		<zIndex>25</zIndex>
       </text>
   </view>
+  
+  <include>./extendedInfosubset.xml</include>
+  
 </theme>
