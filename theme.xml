@@ -263,21 +263,19 @@ originally based on: "simple" by nils bonenberger
 ###########################################################################################################
 -->  
   
-
-
   <view name="menu">
     <menuText name="menutitle">
-      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <fontPath>./art/fonts/Cabin-Bold.ttf</fontPath>
       <fontSize>0.044</fontSize>
       <color>FAFAFA</color>
     </menuText>
     <menuText name="menufooter">
-      <fontPath>./art/Cabin-Regular.ttf</fontPath>
+      <fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
       <fontSize>0.02</fontSize>
       <color>777777FF</color>
     </menuText>
     <menuText name="menutext">
-      <fontPath>./art/Cabin-Regular.ttf</fontPath>
+      <fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
       <fontSize>0.0325</fontSize>
       <fontSize tinyScreen="true">0.034</fontSize>
       <color>969696</color>
@@ -288,12 +286,12 @@ originally based on: "simple" by nils bonenberger
       <selectorGradientType>horizontal</selectorGradientType>
     </menuText>
     <menuTextSmall name="menutextsmall">
-      <fontPath>./art/Cabin-Regular.ttf</fontPath>
+      <fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
       <fontSize>0.02</fontSize>
       <color>${groupColor}</color>
     </menuTextSmall>
     <menuGroup name="menugroup">
-      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <fontPath>./art/fonts/Cabin-Bold.ttf</fontPath>
       <fontSize>0.025</fontSize>
       <color>${groupColor}</color>
       <separatorColor>${groupSeparatorColor}</separatorColor>
@@ -310,22 +308,22 @@ originally based on: "simple" by nils bonenberger
       <scrollbarAlignment>innerright</scrollbarAlignment>
     </menuBackground>
     <menuIcons name="menuicons">
-      <iconKodi>./art/icons/Kodi.png</iconKodi>
-      <iconSystem>./art/icons/System.png</iconSystem>
-      <iconUpdates>./art/icons/Updates.png</iconUpdates>
-      <iconGames>./art/icons/Games.png</iconGames>
-      <iconControllers>./art/icons/Controllers.png</iconControllers>
-      <iconUI>./art/icons/UI.png</iconUI>
-      <iconSound>./art/icons/Sound.png</iconSound>
-      <iconNetwork>./art/icons/Network.png</iconNetwork>
-      <iconScraper>./art/icons/Scraper.png</iconScraper>
-      <iconAdvanced>./art/icons/Advanced.png</iconAdvanced>
-      <iconQuit>./art/icons/Quit.png</iconQuit>
-      <iconRestart>./art/icons/Restart.png</iconRestart>
-      <iconShutdown>./art/icons/Shutdown.png</iconShutdown>
-      <iconFastShutdown>./art/icons/Fastshutdown.png</iconFastShutdown>
-      <iconRetroachievements>./art/icons/Contest.png</iconRetroachievements>
-      <iconManual>./art/icons/Manual.png</iconManual>
+      <iconKodi>./art/images/icons/Kodi.png</iconKodi>
+      <iconSystem>./art/images/icons/System.png</iconSystem>
+      <iconUpdates>./art/images/icons/Updates.png</iconUpdates>
+      <iconGames>./art/images/icons/Games.png</iconGames>
+      <iconControllers>./art/images/icons/Controllers.png</iconControllers>
+      <iconUI>./art/images/icons/UI.png</iconUI>
+      <iconSound>./art/images/icons/Sound.png</iconSound>
+      <iconNetwork>./art/images/icons/Network.png</iconNetwork>
+      <iconScraper>./art/images/icons/Scraper.png</iconScraper>
+      <iconAdvanced>./art/images/icons/Advanced.png</iconAdvanced>
+      <iconQuit>./art/images/icons/Quit.png</iconQuit>
+      <iconRestart>./art/images/icons/Restart.png</iconRestart>
+      <iconShutdown>./art/images/icons/Shutdown.png</iconShutdown>
+      <iconFastShutdown>./art/images/icons/Fastshutdown.png</iconFastShutdown>
+      <iconRetroachievements>./art/images/icons/Contest.png</iconRetroachievements>
+      <iconManual>./art/images/icons/Manual.png</iconManual>
     </menuIcons>
     <menuTextEdit name="menutextedit">
       <inactive>./art/textinput_ninepatch.png</inactive>
@@ -337,6 +335,13 @@ originally based on: "simple" by nils bonenberger
       <cornerSize>8 8</cornerSize>
     </menuButton>
   </view>
+  
+  <!--     
+###########################################################################################################
+## GAMES
+###########################################################################################################
+-->   
+
   <view name="basic">
     <image name="background">
       <tile>false</tile>
