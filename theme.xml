@@ -630,25 +630,6 @@ originally based on: "simple" by nils bonenberger
 		<color>80808040</color>
 	</image>
 
-    <image name="md_kidgame">     
-		<origin>0.5 0.5</origin>
-		<path>./art/images/icons/kid.svg</path>
-		<pos>0.55 0.25</pos>
-		<maxSize>0.02 0.03</maxSize>      
-		<color>dddddd</color>
-		<zIndex>100</zIndex>
-    </image>
-
-    <image name="md_hidden">
-		<origin>0.5 0.5</origin>
-		<path>./art/images/icons/hidden.svg</path>
-		<pos>0.55 0.3</pos>
-		<maxSize>0.02 0.03</maxSize>      
-		<color>ff0000</color>
-		<zIndex>100</zIndex>
-    </image>
-
-<!--
     <image name="md_cheevos,md_notcheevos">
 		<origin>0.5 0.5</origin>
 		<path>./art/images/icons/Contest.png</path>
@@ -660,7 +641,25 @@ originally based on: "simple" by nils bonenberger
     
     <image name="md_notcheevos">
       <color>80808040</color>
-    </image>  -->
+    </image> 
+
+    <image name="md_kidgame">     
+		<origin>0.5 0.5</origin>
+		<path>./art/images/icons/kid.svg</path>
+		<pos>0.55 0.3</pos>
+		<maxSize>0.02 0.03</maxSize>      
+		<color>dddddd</color>
+		<zIndex>100</zIndex>
+    </image>
+
+    <image name="md_hidden">
+		<origin>0.5 0.5</origin>
+		<path>./art/images/icons/hidden.svg</path>
+		<pos>0.55 0.35</pos>
+		<maxSize>0.02 0.03</maxSize>      
+		<color>ff0000</color>
+		<zIndex>100</zIndex>
+    </image>
 
   </view>
 
@@ -743,11 +742,24 @@ originally based on: "simple" by nils bonenberger
 	<image name="md_nomanual">
 		<color>80808040</color>
 	</image>	
+
+    <image name="md_cheevos,md_notcheevos">
+		<origin>0.5 0.5</origin>
+		<path>./art/images/icons/Contest.png</path>
+		<pos>0.023 0.75</pos>
+		<maxSize>0.02 0.02</maxSize>     
+		<color>dddddd</color>
+		<zIndex>100</zIndex>
+    </image>
+    
+    <image name="md_notcheevos">
+      <color>80808040</color>
+    </image> 
 	
 	<image name="md_kidgame">     
 		<origin>0.5 0.5</origin>
 		<path>./art/images/icons/kid.svg</path>
-		<pos>0.023 0.75</pos>
+		<pos>0.023 0.7</pos>
 		<maxSize>0.02 0.02</maxSize>      
 		<color>dddddd</color>
 		<zIndex>100</zIndex>

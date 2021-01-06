@@ -68,10 +68,23 @@
 		<image name="md_nomanual">
 			<color>80808040</color>
 		</image>
+		
+		<image name="md_cheevos,md_notcheevos">
+			<origin>0.5 0.5</origin>
+			<path>./../images/icons/Contest.png</path>
+			<pos>0.976 0.47</pos>
+			<maxSize>0.02 0.03</maxSize>     
+			<color>dddddd</color>
+			<zIndex>100</zIndex>
+		</image>
+    
+		<image name="md_notcheevos">
+			<color>80808040</color>
+		</image> 
 
 		<image name="md_kidgame"> 
 			<origin>0.5 0.5</origin>
-			<pos>0.976 0.47</pos>
+			<pos>0.976 0.52</pos>
 			<path>./../images/icons/kid.svg</path>
 			<maxSize>0.02 0.03</maxSize>     
 			<color>dddddd</color>
@@ -80,7 +93,7 @@
 		
 		<image name="md_hidden">
 			<origin>0.5 0.5</origin>
-			<pos>0.976 0.52</pos>
+			<pos>0.976 0.57</pos>
 			<path>./../images/icons/hidden.svg</path>
 			<maxSize>0.02 0.03</maxSize>    
 			<color>ff0000</color>
