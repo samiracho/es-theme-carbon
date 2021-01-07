@@ -342,7 +342,7 @@ originally based on: "simple" by nils bonenberger
 ###########################################################################################################
 -->   
 
-  <view name="basic, detailed, grid">
+  <view name="basic, detailed, grid, gamecarousel">
   
 	<image name="BottomBar" extra="true">
 	    <origin>0 1</origin>
@@ -448,9 +448,9 @@ originally based on: "simple" by nils bonenberger
 	
   </view>
       
-<!-- ------------------  DETAILED -------------------------------- -->  	
+<!-- ------------------  DETAILED & GAMECAROUSEL -------------------------------- -->  	
 
- <view name="detailed">
+ <view name="detailed,gamecarousel">
   
     <image name="detailsBk" extra="true">
       <path>./art/images/tiles/filter.png</path>
@@ -556,7 +556,7 @@ originally based on: "simple" by nils bonenberger
     <datetime name="md_releasedate">
 		<origin>0 0.5</origin>
 		<pos>0.58 0.64</pos>
-		<size>0.1 0.035</size>
+		<size>0.15 0.035</size>
 		<format>${dateFormat}</format>
 		<alignment>left</alignment>
 		<fontSize>0.025</fontSize>
@@ -662,6 +662,54 @@ originally based on: "simple" by nils bonenberger
     </image>
 
   </view>
+<!-- ------------------  DETAILED -------------------------------- --> 
+<view name="detailed">
+  
+    <textlist name="gamelist">
+      <primaryColor>C0C0C0</primaryColor>
+      <secondaryColor>808080</secondaryColor>
+      <selectorColor>${centerFadeColor}</selectorColor>
+      <selectedColor>FFFFFFFF</selectedColor>
+      <forceUppercase>1</forceUppercase>
+      <pos>0.021 0.18</pos>
+      <size>0.489 0.73</size>
+      <alignment>left</alignment>
+      <fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
+      <fontSize>0.028</fontSize>       
+      <scrollSound>./art/sounds/scroll.wav</scrollSound> 
+	  
+      <scrollbarColor>96969620</scrollbarColor>
+      <scrollbarCorner>0.49</scrollbarCorner>
+      <scrollbarSize>0.01</scrollbarSize>            
+      <scrollbarAlignment>outerright</scrollbarAlignment>    
+	  
+      <lines>17</lines>
+      <horizontalMargin>0.005</horizontalMargin>
+    </textlist>
+	
+</view>
+
+<!-- ------------------  GAMECAROUSEL -------------------------------- --> 
+  <view name="gamecarousel">
+  
+    <gamecarousel name="gamecarousel">
+      <type>vertical_wheel</type>
+      <pos>0 0.162</pos>
+      <size>0.52 0.775</size>
+      <logoScale>4.5</logoScale>
+      <logoSize>0.15 0.12</logoSize>
+      <maxLogoCount>15</maxLogoCount>
+      <imageSource>marquee</imageSource> <!-- text, image, thumbnail, marquee -->
+      <zIndex>30</zIndex>
+    </gamecarousel>   
+	
+    <text name="gamecarouselLogoText">
+      <color>${systemInfoColor}</color>
+      <glowColor>${glowColor}</glowColor>
+      <glowSize>3</glowSize>
+      <lineSpacing>1.0</lineSpacing>
+    </text>
+  </view>  
 
 <!-- ------------------  GRID -------------------------------- --> 
   
@@ -1041,6 +1089,8 @@ originally based on: "simple" by nils bonenberger
   
   <!-- Specific layout for systems -->
   <include>./art/layouts/${system.theme}.xml</include>
+  
+  
   <!-- Layout when help is disabled -->
   <include ifHelpPrompts="false">./art/help/nohelp.xml</include>
   <!-- Layout for small screens -->
@@ -1050,13 +1100,22 @@ originally based on: "simple" by nils bonenberger
   </subset>
 
   <!-- Background of game list -->
-  <subset name="gamelistbackground" displayName="${gamelistbackground}" appliesTo="basic,detailed,grid,Tiles,Icons,Carousel,Boxes">
+  <subset name="gamelistbackground" displayName="${gamelistbackground}" appliesTo="basic,detailed,grid,gamecarousel,Tiles,Icons,Carousel,Boxes">
     <include name="simple animated">./art/gamelistsbk/animatedbackground.xml</include>
 	<include name="simple">./art/gamelistsbk/simple.xml</include>
     <include name="none" displayName="${none}"/>
     <include name="consoles">./art/gamelistsbk/batomachines.xml</include>
     <include name="carbon legacy">./art/gamelistsbk/carbon.xml</include>
   </subset>
+  
+  <!-- Gamecarousel image -->
+  <!-- text, image, thumbnail, marquee -->
+	<subset name="gamecarouseltype" displayName="${gamecarouseltype}" appliesTo="gamecarousel">
+		<include name="marquee">./art/gamelistview/gamecarousel/gamecarouselmarquee.xml</include>
+		<include name="image">./art/gamelistview/gamecarousel/gamecarouselimage.xml</include>
+		<include name="text" >./art/gamelistview/gamecarousel/gamecarouseltext.xml</include>
+		<include name="thumbnail">./art/gamelistview/gamecarousel/gamecarouselthumbnail.xml</include>
+	</subset>
   
   <!-- add game info bar -->
   	<subset name="gameBar" displayName="Add game info bar" appliesTo="detailed,grid,Tiles,Icons,Carousel,Boxes">

@@ -28,6 +28,7 @@
 	<helpbuttons>Button location</helpbuttons>
     <xboxbuttons>Xbox buttons</xboxbuttons>
     <psxbuttons>Playstation buttons</psxbuttons>
+	<gamecarouseltype>Gamecarousel type</gamecarouseltype>
   </variables>
   <!-- French -->
   <variables lang="fr">

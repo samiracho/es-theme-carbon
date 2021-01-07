@@ -2,7 +2,7 @@
 <theme>
   <formatVersion>7</formatVersion>
   
-  <view name="basic, detailed, grid" >
+  <view name="basic, detailed, grid, gamecarousel" >
 	
 	<image name="Bk" extra="true">
       <tile>false</tile>

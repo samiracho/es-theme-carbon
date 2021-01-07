@@ -3,7 +3,7 @@
   <formatVersion>7</formatVersion>
   
 <!-- ------------------  INFOS GAME (BAR) -------------------------------- -->  
-	<view name="grid,detailed">
+	<view name="grid,detailed,gamecarousel">
 
 		<image name="iconsBk" extra="true">
 			<path>./../images/tiles/filter.png</path>
@@ -124,7 +124,7 @@
 	</view>	
 
 <!-- ------------------  DETAILED -------------------------------- -->  	
-	<view name="detailed"> 
+	<view name="detailed,gamecarousel"> 
 	
 	    <video name="md_video">
 			<pos>0.74 0.39</pos>
