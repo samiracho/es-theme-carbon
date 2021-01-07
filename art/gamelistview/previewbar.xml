@@ -14,7 +14,7 @@
   <customView name="Carousel,Boxes,Tiles,Icons,grid,detailed">
   
     <image name="detailsBk" extra="true">
-      <path>./../filter.png</path>
+      <path>./../images/tiles/filter.png</path>
       <color>000000A0</color>
       <origin>0 0</origin>
       <pos>0.66 0.16</pos>
@@ -23,7 +23,7 @@
     </image>
 
     <image name="detailsBkLine" extra="true">
-      <path>./art/white.png</path>
+      <path>./../images/tiles/white.png</path>
       <color>${glowColor}</color>
       <origin>0 0</origin>
       <pos>0.66 0.16</pos>
@@ -32,7 +32,7 @@
     </image>  
 
 	<image name="bottomDetailsLine" extra="true">
-		<path>./art/white.png</path>
+		<path>./../images/tiles/white.png</path>
 		<color>${glowColor}</color>
 		<origin>0 0</origin>
 		<pos>0.66 0.935</pos>
@@ -86,7 +86,7 @@
 	<image name="tv_overlay" extra="true">
       <pos>0.68 0.25</pos>
       <size>0.30 0.40</size>
-      <path>./../tv.png</path>
+      <path>./../images/tiles/tv.png</path>
       <zIndex>140</zIndex>
     </image>
 -->
@@ -97,7 +97,7 @@
       <size>0.26 0.2</size>
       <color>C0C0C0</color>
       <forceUppercase>0</forceUppercase>
-      <fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
+      <fontPath>./../fonts/Cabin-Regular.ttf</fontPath>
       <fontSize>0.023</fontSize>
     </text>
 	 

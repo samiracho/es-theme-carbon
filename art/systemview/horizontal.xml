@@ -19,7 +19,7 @@
     
     <image name="carousel-inner" extra="true">
       <origin>0 0.5</origin>    		
-      <path>./../carousel.png</path>
+      <path>./../images/tiles/carousel.png</path>
       <color>FFFFFFFF</color>
       <pos>0 0.5</pos>
       <size>1 0.24</size>
@@ -27,7 +27,7 @@
     </image>
 		
 	<image name="carousel-shadow" extra="true">
-		<path>./../shadow.png</path>
+		<path>./../images/tiles/shadow.png</path>
 		<color>FFFFFF40</color>
 		<pos>0 0.62</pos>
 		<origin>0 0</origin>

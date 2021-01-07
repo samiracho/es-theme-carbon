@@ -16,7 +16,7 @@
 
 
     <image name="carousel-topline,carousel-bottomline" extra="true">
-		<path>./../white.png</path>
+		<path>./../images/tiles/white.png</path>
 		<color>${baseColor}</color>
 		<origin>0 0</origin>
 		<size>1 0.005</size>

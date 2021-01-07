@@ -30,7 +30,7 @@
     </image>
     <image name="progressbar:active">
       <tile>true</tile>
-      <path>./art/progress.png</path>
+      <path>./art/images/tiles/progress.png</path>
       <color>${baseColor}</color>
       <colorEnd>${gradientEndColor}</colorEnd>
     </image>
@@ -52,12 +52,12 @@
       <size>1 0.5</size>
       <pos>0.5 0.5</pos>
       <origin>0.5 0.5</origin>
-      <path>./art/centerfade.png</path>
+      <path>./art/images/tiles/centerfade.png</path>
       <color>${centerFadeColor}</color>      
       <zIndex>12</zIndex>
     </image>
     <image name="logo" extra="true">
-      <path>./art/splash_batocera.svg</path>
+      <path>./art/images/splash_batocera.svg</path>
       <pos>0.5 0.455</pos>
       <origin>0.5 0.5</origin>
       <maxSize>0.8 0.8</maxSize>
@@ -67,7 +67,7 @@
       <pos>0.5 0.5</pos>
       <origin>0.5 0.5</origin>
       <minSize>1 1</minSize>
-      <path>./art/bg.png</path>
+      <path>./art/images/tiles/bg.png</path>
       <color>${backgroundColor}</color>
       <opacity>0.6</opacity>
     </image>

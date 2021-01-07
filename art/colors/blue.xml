@@ -10,7 +10,6 @@
     <backgroundColor>051222</backgroundColor>
     <glowColor>3060Ab24</glowColor>
     <systemInfoColor>FAFAFFB0</systemInfoColor>
-    <backgroundImage>./art/fiber.png</backgroundImage>
 
     <groupColor>5178C3</groupColor>
     <groupSeparatorColor>3B5B96</groupSeparatorColor>

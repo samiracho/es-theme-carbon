@@ -56,14 +56,14 @@
     <image name="carousel-back" extra="true" >
 		<origin>0.5 0</origin> 
 		<pos>0.22 0</pos>
-		<path>./../white.png</path>
+		<path>./../images/tiles/white.png</path>
 		<color>000000b0</color>
 		<size>0.32 0.935</size>
 		<zIndex>12</zIndex>
     </image>
 
 	<image name="carousel-topline,carousel-bottomline" extra="true">
-      <path>./../white.png</path>
+      <path>./../images/tiles/white.png</path>
       <color>${baseColor}</color>
       <size>0.002 0.935</size>
       <zIndex>45</zIndex>
@@ -83,7 +83,7 @@
       <size>1 0.6</size>
       <pos>0 0.5</pos>
       <origin>0 0.5</origin>
-      <path>./../centerfade.png</path>
+      <path>./../images/tiles/centerfade.png</path>
       <color>${centerFadeColor}</color>
       <zIndex>19</zIndex>
     </image>

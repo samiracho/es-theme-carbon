@@ -7,7 +7,7 @@
       <tile>true</tile>
       <size>1 1</size>
       <pos>0 0</pos>
-      <path>./../carbon_fiber.png</path>
+      <path>./../images/tiles/carbon_fiber.png</path>
       <color>FFFFFF</color>
     </image>
 	

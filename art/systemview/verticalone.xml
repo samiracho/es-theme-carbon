@@ -56,7 +56,7 @@
 	  <origin>0.5 0</origin> 
       <pos>0.22 0.25</pos>
       <size>0.36 0.265</size>
-      <path>./../darkwheel.png</path>
+      <path>./../images/tiles/darkwheel.png</path>
       <zIndex>15</zIndex>
     </image>
 	

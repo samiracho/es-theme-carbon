@@ -90,7 +90,7 @@
       <animateColorTime>0</animateColorTime>
     </ninepatch>
     <image name="topline" extra="true">
-      <path>./../white.png</path>
+      <path>./../images/tiles/white.png</path>
       <color>${baseColor}</color>
       <origin>0 0</origin>
       <pos>0 0.15</pos>

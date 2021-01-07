@@ -6,7 +6,7 @@
 	<view name="grid,detailed">
 
 		<image name="iconsBk" extra="true">
-			<path>./../filter.png</path>
+			<path>./../images/tiles/filter.png</path>
 			<color>00000080</color>
 			<colorEnd>000000ff</colorEnd>
 			<gradientType>horizontal</gradientType>
@@ -17,7 +17,7 @@
 		</image>
 
 		<image name="iconsLine" extra="true">
-			<path>./../white.png</path>
+			<path>./../images/tiles/white.png</path>
 			<color>${glowColor}</color>
 			<origin>0 0</origin>
 			<pos>0.95 0.16</pos>
@@ -26,7 +26,7 @@
 		</image>  
 		
 		<image name="bottomIconsLine" extra="true">
-			<path>./../white.png</path>
+			<path>./../images/tiles/white.png</path>
 			<color>${glowColor}</color>
 			<origin>0 0</origin>
 			<pos>0.95 0.935</pos>
