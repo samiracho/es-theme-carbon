@@ -30,7 +30,7 @@ Dernière partie : {binding:lastPlayedDate}</text>
 		<alignment>center</alignment>
 		<pos>0 0.64</pos>
 		<size>1 0.28</size>
-		<fontSize>0.03</fontSize>  
+		<fontSize>0.024</fontSize>  
 		<zIndex>25</zIndex>
       </text>
   </view>

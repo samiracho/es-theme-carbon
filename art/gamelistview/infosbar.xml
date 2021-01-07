@@ -135,7 +135,7 @@
 			<pos>0.55 0.67</pos>
 			<size>0.38 0.2</size>
 		</text> 
-	
+<!--	
 		<image name="developerImage" extra="true">
 			<origin>1 0.5</origin>
 			<pos>0.56 0.64</pos>
@@ -144,11 +144,11 @@
 			<linearSmooth>true</linearSmooth>
 			<zIndex>100</zIndex>
 		</image>
-	
+-->	
 		<text name="md_developer">
-			<pos>0.57 0.64</pos>
+			<pos>0.55 0.64</pos>
 		</text> 
-
+<!--
 		<image name="genreImage" extra="true">
 			<origin>1 0.5</origin>
 			<pos>0.57 0.91</pos>
@@ -157,10 +157,10 @@
 			<linearSmooth>true</linearSmooth>
 			<zIndex>100</zIndex>
 		</image>
-	
+-->	
 		<text name="md_genre">
 			<origin>0 0.5</origin>
-			<pos>0.58 0.91</pos>
+			<pos>0.55 0.91</pos>
 			<size>0.34 0.035</size>
 			<alignment>left</alignment>
 		</text>

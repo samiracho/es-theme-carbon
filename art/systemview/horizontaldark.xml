@@ -8,12 +8,11 @@
   <view name="system">
 
     <carousel name="systemcarousel">
-      <color>000000c0</color>
-      <colorEnd>000000a0</colorEnd>	  
+      <color>00000060</color>
+      <colorEnd>00000070</colorEnd>
 	  <logoSize>0.2 0.13</logoSize>
 	  <logoScale>1.6</logoScale>           
     </carousel>
-
 
     <image name="carousel-topline,carousel-bottomline" extra="true">
 		<path>./../images/tiles/white.png</path>
@@ -34,6 +33,6 @@
 	<image name="carousel-shadow" extra="true">
 		<visible>false</visible>
 	</image>
-	
+		
   </view>
 </theme>

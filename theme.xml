@@ -142,7 +142,7 @@ originally based on: "simple" by nils bonenberger
 		<alignment>center</alignment>
 		<pos>0 0.64</pos>
 		<size>1 0.28</size>
-		<fontSize>0.04</fontSize>   
+		<fontSize>0.032</fontSize>   
 		<zIndex>25</zIndex>
     </text>
 	
@@ -782,7 +782,7 @@ originally based on: "simple" by nils bonenberger
 		<origin>0.5 0.5</origin>
 		<pos>0.023 0.8</pos>
 		<path>./art/images/icons/book.png</path>
-		<maxSize>0.02 0.02</maxSize>    
+		<maxSize>0.02 0.03</maxSize>    
 		<color>dddddd</color>		
 		<zIndex>100</zIndex>
 	</image>
@@ -795,7 +795,7 @@ originally based on: "simple" by nils bonenberger
 		<origin>0.5 0.5</origin>
 		<path>./art/images/icons/Contest.png</path>
 		<pos>0.023 0.75</pos>
-		<maxSize>0.02 0.02</maxSize>     
+		<maxSize>0.02 0.03</maxSize>     
 		<color>dddddd</color>
 		<zIndex>100</zIndex>
     </image>
@@ -808,7 +808,7 @@ originally based on: "simple" by nils bonenberger
 		<origin>0.5 0.5</origin>
 		<path>./art/images/icons/kid.svg</path>
 		<pos>0.023 0.7</pos>
-		<maxSize>0.02 0.02</maxSize>      
+		<maxSize>0.02 0.03</maxSize>      
 		<color>dddddd</color>
 		<zIndex>100</zIndex>
     </image>
@@ -817,7 +817,7 @@ originally based on: "simple" by nils bonenberger
 		<origin>0.5 0.5</origin>
 		<path>./art/images/icons/hidden.svg</path>
 		<pos>0.023 0.2</pos>
-		<maxSize>0.02 0.02</maxSize>      
+		<maxSize>0.02 0.03</maxSize>      
 		<color>ff0000</color>
 		<zIndex>100</zIndex>
     </image>	
@@ -852,13 +852,16 @@ originally based on: "simple" by nils bonenberger
       <imageColor>FFFFFFFF</imageColor>
     </gridtile>
 	
-    <text name="gridtile">
-      <color>FFFFFF80</color>
+    <text name="gridtile">	  
+	  <color>D0D0D0D0</color>
       <backgroundColor>00000000</backgroundColor>
+      <alignment>center</alignment>  
       <fontSize>0.025</fontSize>
       <alignment>center</alignment>
       <size>1 0.28</size>
 	  <lineSpacing>1</lineSpacing>
+	  <fontPath>./art/fonts/Cabin-Regular.ttf</fontPath>
+	  <fontSize>0.025</fontSize>
     </text>
 	
     <text name="gridtile:selected">
@@ -1026,6 +1029,13 @@ originally based on: "simple" by nils bonenberger
       <roundCorners>0.020</roundCorners>
     </image>
 	
+	<text name="gridtile">
+      <padding>0.08 0.02</padding>
+      <size>0 0.22</size>
+      <glowColor>00000060</glowColor>
+      <glowSize>1</glowSize>
+    </text>
+		
     <image name="gridtile.favorite">      
       <path>./art/images/icons/favorite.png</path>
       <pos>0.93 0.07</pos>
@@ -1044,8 +1054,8 @@ originally based on: "simple" by nils bonenberger
 <!-- ------------------  GRID : TILES : ICONS -------------------------------- --> 	
 
  <customView name="Icons" inherits="Tiles" displayName="${iconsViewName}">
-   <imagegrid name="gamegrid">
-      
+ 
+   <imagegrid name="gamegrid">     
       <autoLayout>0 2</autoLayout>
       <cellProportion>1</cellProportion>
       <cellProportion verticalScreen="true">0.77</cellProportion>
@@ -1054,20 +1064,10 @@ originally based on: "simple" by nils bonenberger
     </imagegrid>
 	
 	<text name="gridtile">
-      <color>FFFFFF80</color>
-      <backgroundColor>00000000</backgroundColor>
-      <fontSize>0.025</fontSize>
-      <alignment>center</alignment>
-      <size>1 0.28</size>
-	  <lineSpacing>1</lineSpacing>
+      <size>1 0.18</size>
+	  <padding>0 0.01 0 0.1</padding>
     </text>
 	
-	<text name="gridtile:selected">
-		<color>${systemInfoColor}</color>
-		<glowColor>${glowColor}</glowColor>
-		<glowSize>2</glowSize>
-    </text>
-
   </customView>  
 
 <!-- ------------------  SUBSETS  -------------------------------- --> 	

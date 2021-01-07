@@ -11,10 +11,6 @@
       <color>FFFFFF</color>
     </image>
 	
-	<image name="CenterFade" extra="true">
-	  <visible>true</visible>
-    </image>
-	
   </view>
   
 </theme>

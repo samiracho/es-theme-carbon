@@ -63,7 +63,7 @@
       <showSnapshotDelay>true</showSnapshotDelay>
       <loops>0</loops>
     </video>
-	
+<!--	
 	<image name="developerImage" extra="true">
 		<origin>1 0.5</origin>
 		<pos>0.70 0.63</pos>
@@ -72,12 +72,12 @@
 		<linearSmooth>true</linearSmooth>
 		<zIndex>100</zIndex>
 	</image>
-	
+-->	
     <text name="md_developer">
 		<origin>0 0.5</origin>
 		<fontPath>./../fonts/Cabin-Bold.ttf</fontPath>
 		<color>EFEFFF</color>
-		<pos>0.71 0.63</pos>
+		<pos>0.68 0.63</pos>
 		<size>0.28 0.05</size>
 		<alignment>left</alignment>
 		<fontSize>0.025</fontSize>
@@ -100,7 +100,7 @@
       <fontPath>./../fonts/Cabin-Regular.ttf</fontPath>
       <fontSize>0.023</fontSize>
     </text>
-	 
+<!--	 
 	<image name="genreImage" extra="true">
 		<origin>1 0.5</origin>
 		<pos>0.70 0.9</pos>
@@ -109,27 +109,28 @@
 		<linearSmooth>true</linearSmooth>
 		<zIndex>100</zIndex>
 	</image>
-	
+-->	
 	<text name="md_genre">
 		<origin>0 0.5</origin>
 		<color>EFEFFF</color>
 		<forceUppercase>0</forceUppercase>
 		<fontPath>./../fonts/Cabin-Bold.ttf</fontPath>
 		<fontSize>0.023</fontSize>
-		<pos>0.71 0.9</pos>
+		<pos>0.68 0.9</pos>
 		<size>0.23 0.035</size>
 		<alignment>left</alignment>
-		<singleLineScroll>true</singleLineScroll>
+		<autoScroll>horizontal</autoScroll>
+		<!-- <singleLineScroll>true</singleLineScroll> -->
 	</text> 
 	 
   </customView>
-  
+
 	<view name="detailed">
 		<textlist name="gamelist">
 			<size>0.62 0.774</size>
 		</textlist>
 	</view>
- 
+
   <customView name="Carousel">
     <imagegrid name="gamegrid">
       <pos>0 0.16</pos>
