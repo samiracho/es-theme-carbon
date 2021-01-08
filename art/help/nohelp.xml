@@ -7,7 +7,7 @@
     </image>
   </view>
 
-  <view name="basic, detailed, grid">
+  <view name="basic, detailed, grid, gamecarousel">
     <image name="BottomBar" extra="true">
       <visible>false</visible>
     </image>
