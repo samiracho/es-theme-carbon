@@ -212,10 +212,9 @@ originally based on: "simple" by nils bonenberger
 			<pos tinyScreen="true">0.032 0.19</pos>
 		</text> 
     </view>
-  </feature>  
+  </feature>
 
-
-<!-- ------------------  SYSTEM SUBSETS -------------------------------- --> 	  
+<!-- SYSTEM SUBSETS -->
 
   <!-- Subset option for System extended informations -->
   <subset name="subsetSystemInfoEx" displayName="${systemViewExInfos}" tinyScreen="false">
@@ -417,10 +416,10 @@ originally based on: "simple" by nils bonenberger
       <forceUppercase>true</forceUppercase>
       <zIndex>200</zIndex>
     </text>  
-	
   </view>
 
-<!-- ------------------  BASIC -------------------------------- -->  
+<!-- BASIC -->
+
   <view name="basic">
  
     <textlist name="gamelist">    
@@ -448,7 +447,7 @@ originally based on: "simple" by nils bonenberger
 	
   </view>
       
-<!-- ------------------  DETAILED & GAMECAROUSEL -------------------------------- -->  	
+<!-- DETAILED & GAMECAROUSEL -->
 
  <view name="detailed,gamecarousel">
   
@@ -662,7 +661,8 @@ originally based on: "simple" by nils bonenberger
     </image>
 
   </view>
-<!-- ------------------  DETAILED -------------------------------- --> 
+  
+<!-- DETAILED  --> 
 <view name="detailed">
   
     <textlist name="gamelist">
@@ -689,7 +689,8 @@ originally based on: "simple" by nils bonenberger
 	
 </view>
 
-<!-- ------------------  GAMECAROUSEL -------------------------------- --> 
+<!-- GAMECAROUSEL --> 
+
   <view name="gamecarousel">
   
     <gamecarousel name="gamecarousel">
@@ -711,7 +712,7 @@ originally based on: "simple" by nils bonenberger
     </text>
   </view>  
 
-<!-- ------------------  GRID -------------------------------- --> 
+<!-- GRID --> 
   
    <view name="grid">
 	
@@ -764,8 +765,7 @@ originally based on: "simple" by nils bonenberger
       <color>80808030</color>
       <zIndex>150</zIndex>
     </image>
-    </image>
-	
+
 	<text name="md_players">
 		<origin>0.5 0.5</origin>
 		<size>0.03 0.03</size>
@@ -877,7 +877,7 @@ originally based on: "simple" by nils bonenberger
 
   </view>	  
 
-<!-- ------------------  GRID : BOXES -------------------------------- --> 	  
+<!-- GRID : BOXES -->
 
  <customView name="Boxes" inherits="grid" displayName="${basicGridName}">
  
@@ -905,7 +905,8 @@ originally based on: "simple" by nils bonenberger
 	
   </customView>	   
 
-<!-- ------------------  GRID : CAROUSEL -------------------------------- --> 	    
+<!-- -GRID : CAROUSEL  -->
+
  <customView name="Carousel" inherits="grid" tinyScreen="false" displayName="${carouselViewName}">
  
     <text name="md_name">		
@@ -971,7 +972,8 @@ originally based on: "simple" by nils bonenberger
 
   </customView>
 
-<!-- ------------------  GRID : TILES -------------------------------- --> 
+<!-- GRID : TILES -->
+
   <customView name="Tiles" inherits="grid" displayName="${tilesViewName}">
   
     <imagegrid name="gamegrid">
@@ -1051,7 +1053,7 @@ originally based on: "simple" by nils bonenberger
 	
   </customView>
   
-<!-- ------------------  GRID : TILES : ICONS -------------------------------- --> 	
+<!-- GRID : TILES : ICONS --> 	
 
  <customView name="Icons" inherits="Tiles" displayName="${iconsViewName}">
  
@@ -1070,7 +1072,7 @@ originally based on: "simple" by nils bonenberger
 	
   </customView>  
 
-<!-- ------------------  SUBSETS  -------------------------------- --> 	
+<!--  SUBSETS  --> 	
   
   <!-- Subset options for help -->
   <subset name="helpsystem" displayName="${helpSubsetName}">
