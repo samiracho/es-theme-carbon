@@ -112,7 +112,7 @@ originally based on: "simple" by nils bonenberger
       <size>0.90 0.02</size>  
       <alignment>right</alignment>
       <fontSize>0.035</fontSize>
-      <fontPath>./art/Cabin-Bold.ttf</fontPath>
+      <fontPath>./art/fonts/Cabin-Bold.ttf</fontPath>
          <zIndex>25</zIndex>
     </text>
   </view>
